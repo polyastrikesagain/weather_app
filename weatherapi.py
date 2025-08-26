@@ -16,7 +16,7 @@ class WeatherApi:
     def get_coords(self):
         json_query = f"https://geocode.maps.co/search?city={self.city}&country={self.country}&api_key={self.geocoding_api_key}"
         response = requests.get(json_query).json()
-        return [(res['display_name'], res['lat'], res['lon']) for res in response]
+        return [{'name' : res['display_name'], 'lat' : res['lat'], 'lon' : res['lon']} for res in response]
 
     def get_weather(self, lat, lon):
         json_query = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers,snowfall,wind_speed_10m&timezone=auto&wind_speed_unit=ms"

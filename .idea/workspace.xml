@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="first commit (established the class, created .envs that won't be added to github since they contain api tokens)">
+    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="coding a case if multiple locations by the same name are found">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherapi.py" afterDir="false" />
@@ -22,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -55,7 +60,7 @@
     "Python.weatherapi.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "multiple__locations",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
@@ -90,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756139126745</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="coding a case if multiple locations by the same name are found">
+      <option name="closed" value="true" />
+      <created>1756210784620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756210784620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit (established the class, created .envs that won't be added to github since they contain api tokens)" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit (established the class, created .envs that won't be added to github since they contain api tokens)" />
+    <MESSAGE value="coding a case if multiple locations by the same name are found" />
+    <option name="LAST_COMMIT_MESSAGE" value="coding a case if multiple locations by the same name are found" />
   </component>
 </project>
