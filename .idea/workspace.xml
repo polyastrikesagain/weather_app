@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/env_files/geocoding_api_key.env" beforeDir="false" afterPath="$PROJECT_DIR$/env_files/geocoding_api_key.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
     "Python.weatherapi.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "multiple__locations",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "settings.editor.selected.configurable": "editor.preferences.inline.completion"
   }
