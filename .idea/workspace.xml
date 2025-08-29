@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="can choose out of several locations now + handle all input problems + added wm">
+    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/env_files/geocoding_api_key.env" beforeDir="false" afterPath="$PROJECT_DIR$/env_files/geocoding_api_key.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherapi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756213548402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here">
+      <option name="closed" value="true" />
+      <created>1756501406122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756501406122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +143,7 @@
     <MESSAGE value="first commit (established the class, created .envs that won't be added to github since they contain api tokens)" />
     <MESSAGE value="coding a case if multiple locations by the same name are found" />
     <MESSAGE value="can choose out of several locations now + handle all input problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="can choose out of several locations now + handle all input problems" />
+    <MESSAGE value="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here" />
+    <option name="LAST_COMMIT_MESSAGE" value="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here" />
   </component>
 </project>
