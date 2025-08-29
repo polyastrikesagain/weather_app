@@ -20,6 +20,7 @@ while True:
 
 #to choose a location if there's many of them by the same name
 if len(location_coords) > 1:
+    print(location_coords)
     print(f"Many different locations were found by the name {city}, {country}:")
     for i in range(len(location_coords)):
         print(f"[{i+1}]. {location_coords[i]['name']}")
@@ -40,9 +41,49 @@ if len(location_coords) > 1:
 else:
     chosen_location = location_coords[0]
 
-#choosing what we want to see tba tba etc etc yada yada
+app.set_coords(chosen_location['lat'], chosen_location['lon'])
+
+print("Choose the forecast's number:")
+print("[1]. Current weather")
+print("[2]. Weather tomorrow")
+print("[3]. Next week forecast")
+while True:
+    number = input("Enter your choice: ")
+    try:
+        number = int(number)
+    except ValueError:
+        print("You have to input a number. Let's try again")
+    if isinstance(number, int):
+        if not (1 <= number <= 3):
+            print("Only three options are available to see the weather. Let's try again")
+        else:
+            break
+
+forecast_table = PrettyTable()
+forecast_table.hrules = True
+match number:
+    case 1:
+        forecast = app.get_weather(current=True)
+        forecast_table.field_names = forecast[0]
+        forecast = forecast[1:]
+    case 2:
+        forecast = app.get_weather(current=False)[:] #да такой же дейлик как и неделька, только срезик на каждую строку
+        forecast_table.header = False
+    case 3:
+        forecast = app.get_weather(current=False)
+        forecast_table.header = False
 
 
 
+for row in forecast:
+    forecast_table.add_row(row)
+print(forecast_table)
 
-print(chosen_location)
+
+##NOTES
+##1.    FIX CASE 2 TO ONLY SHOW THE TOMORROWS PROGNOSIS
+
+##2.    ADD CACHE FILE WITH COORDINATES THAT THE USER CHOSE WHEN EXECUTING THE CODE PREVIOUSLY
+##WITH AN OPTION TO MAKE A NEW SEARCH
+
+##3.    ADD UNITS!

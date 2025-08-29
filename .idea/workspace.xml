@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="coding a case if multiple locations by the same name are found">
+    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="can choose out of several locations now + handle all input problems + added wm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_files/geocoding_api_key.env" beforeDir="false" afterPath="$PROJECT_DIR$/env_files/geocoding_api_key.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherapi.py" afterDir="false" />
     </list>
@@ -28,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -57,13 +59,19 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Doctests in adapters.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.weatherapi.executor": "Run",
+    "Python.weatherapi.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "multiple__locations",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\paulc\PycharmProjects\weather_app" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756210784620</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="can choose out of several locations now + handle all input problems">
+      <option name="closed" value="true" />
+      <created>1756213548402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756213548402</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit (established the class, created .envs that won't be added to github since they contain api tokens)" />
     <MESSAGE value="coding a case if multiple locations by the same name are found" />
-    <option name="LAST_COMMIT_MESSAGE" value="coding a case if multiple locations by the same name are found" />
+    <MESSAGE value="can choose out of several locations now + handle all input problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="can choose out of several locations now + handle all input problems" />
   </component>
 </project>
