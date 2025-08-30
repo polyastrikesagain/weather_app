@@ -1,0 +1,14 @@
+Index: env_files/geocoding_api_key.env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/env_files/geocoding_api_key.env b/env_files/geocoding_api_key.env
+--- a/env_files/geocoding_api_key.env	(revision 95d8d9f1ce7c0a6727a32fea9de86eb1e08998d8)
++++ b/env_files/geocoding_api_key.env	(date 1756501536169)
+@@ -1,1 +1,1 @@
+-
++GEOCODING_API_KEY="68ac5cf44cc09363618894ucp6887d9"
+\ No newline at end of file
