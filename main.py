@@ -46,7 +46,7 @@ app.set_coords(chosen_location['lat'], chosen_location['lon'])
 print("Choose the forecast's number:")
 print("[1]. Current weather")
 print("[2]. Weather tomorrow")
-print("[3]. Next week forecast")
+print("[3]. Full week forecast")
 while True:
     number = input("Enter your choice: ")
     try:
@@ -67,7 +67,7 @@ match number:
         forecast_table.field_names = forecast[0]
         forecast = forecast[1:]
     case 2:
-        forecast = app.get_weather(current=False)[:] #да такой же дейлик как и неделька, только срезик на каждую строку
+        forecast = [(days[0], days[2]) for days in app.get_weather(current=False)]
         forecast_table.header = False
     case 3:
         forecast = app.get_weather(current=False)
@@ -81,9 +81,13 @@ print(forecast_table)
 
 
 ##NOTES
-##1.    FIX CASE 2 TO ONLY SHOW THE TOMORROWS PROGNOSIS
+##1.    FIX CASE 2 TO ONLY SHOW THE TOMORROWS PROGNOSIS | READY
 
 ##2.    ADD CACHE FILE WITH COORDINATES THAT THE USER CHOSE WHEN EXECUTING THE CODE PREVIOUSLY
 ##WITH AN OPTION TO MAKE A NEW SEARCH
 
-##3.    ADD UNITS!
+##3.    ADD UNITS! | READY
+
+###IMPORTANT
+##no LLMs or AI were used since the goal of this project was to learn to code, not to copy-paste
+###
