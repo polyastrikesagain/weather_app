@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here">
-      <change beforePath="$PROJECT_DIR$/env_files/geocoding_api_key.env" beforeDir="false" afterPath="$PROJECT_DIR$/env_files/geocoding_api_key.env" afterDir="false" />
-    </list>
+    <list default="true" id="c8e8a42f-08a0-423d-9b9e-ce4589245a66" name="Changes" comment="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,19 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Doctests in adapters.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.weatherapi.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Doctests in adapters.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weatherapi.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\paulc\PycharmProjects\weather_app" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756501406122</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="data pulls out from the json correctly, is formatted like a list of iterables so that it's convenient to replace all WMO weather codes with their descriptions from the descriptions.json file (Clear for nights and Sunny for days or daily forecast). also convenient for printing everything out as a table with PrettyTable, which is also done here">
+      <option name="closed" value="true" />
+      <created>1756582687984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756582687984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
