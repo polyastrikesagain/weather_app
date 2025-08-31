@@ -1,20 +1,24 @@
-import requests, os
+import requests, os, sys
 from dotenv import load_dotenv
 from json import load
 
 class WeatherApi:
-    def __init__(self, country, city):
+    def __init__(self):
         load_dotenv(dotenv_path='env_files/geocoding_api_key.env', verbose=True)
-        self.geocoding_api_key = os.getenv("GEOCODING_API_KEY")
-        self.country = country
-        self.city = city
+        try:
+           self.geocoding_api_key = os.getenv("GEOCODING_API_KEY")
+        except:
+            print("No API key found for this JSON query in env_files/geocoding_api_key.env")
+            print("The variable name is GEOCODING_API_KEY.")
+            print("If you don't have the key, refer to https://geocode.maps.co/")
+            sys.exit()
         self.lat, self.lon = None, None
 
     def set_coords(self, lat, lon):
         self.lat, self.lon = lat, lon
 
-    def get_coords(self):
-        json_query = f"https://geocode.maps.co/search?city={self.city}&country={self.country}&api_key={self.geocoding_api_key}"
+    def get_coords(self, country, city):
+        json_query = f"https://geocode.maps.co/search?city={city}&country={country}&api_key={self.geocoding_api_key}"
         response = requests.get(json_query).json()
         return [{'name': res['display_name'], 'lat': res['lat'], 'lon': res['lon']} for res in response]
 
@@ -41,6 +45,7 @@ class WeatherApi:
             fetch = "daily"
         forecast_parameters = f"&{fetch}={",".join(list(parameters)[1:])}"
         json_query = f"https://api.open-meteo.com/v1/forecast?latitude={self.lat}&longitude={self.lon}" + forecast_parameters + "&timezone=auto&wind_speed_unit=ms"
+
         response = requests.get(json_query).json()
 
         units = response[f'{fetch}_units']
@@ -61,8 +66,7 @@ class WeatherApi:
                 with open('descriptions.json') as weather_codes_json:
                     weather_codes_json = load(weather_codes_json)
                     for i in range(len(response[key])):
-                        response[key][i] = weather_codes_json[str(response[key][i])][day_or_night_json][
-                            "description"]
+                        response[key][i] = weather_codes_json[str(response[key][i])][day_or_night_json]["description"]
             elif 'temperature' in key or 'humidity' in key or 'speed' in key or 'precipitation' in key:
                 if isinstance(response[key], list):
                     response[key] = [f"{response[key][i]}{units[key]}" for i in range(len(response[key]))]

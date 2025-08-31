@@ -1,3 +1,4 @@
 env_files/geocoding_api_key.env
 env_files/openmeteo_api_key.env
+cache.json
 .venv
