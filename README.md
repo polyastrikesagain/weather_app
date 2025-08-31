@@ -1,4 +1,10 @@
-# Weather App
+# Table of contents
+- [What is it?](#what-is-it)
+- [What does it do?](#what-does-it-do)
+    - [Description of some parameters](#description-of-some-parameters)
+    - [Used units](#used-units)
+- [Used libraries](#used-libraries)
+- [Credits](#credits)
 
 ## What is it?
 A simple Python-based console app for looking up weather using APIs and working with JSONs as a study project of mine. It's up to you to decide whether it's good or bad that I didn't use generative AI for this, but it is a study project after all.
@@ -18,7 +24,7 @@ If there's no cache file in the folder of the project, it will be created after 
 [2] See the forecast for the other location without deleting the saved data
 [3] Delete the saved data
 
-### Description of some parameters###
+### Description of some parameters
 - Type of weather — a description of the weather based on WMO codes that is pulled from the descriptions.json file, all credits for descriptions.json go to stellasphere (https://gist.github.com/stellasphere/9490c195ed2b53c707087c8c2db4ec0c)
 - Precipitation sum — the sum value of precipitation during the period, including rain, snow, etc.
 - UV index — the value of ultraviolet radiation index (for more information about UV index, please refer to WHO recommendations: https://www.who.int/news-room/questions-and-answers/item/radiation-the-ultraviolet-(uv)-index)
